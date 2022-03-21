@@ -93,13 +93,35 @@
       const leftSection = document.createElement('section');
       leftSection.className = 'left-content';
       tagMain.appendChild(leftSection);
-      
 
+      //Exercício 6
+      const rightSection = document.createElement('section');
+      rightSection.className = 'right-content';
+      tagMain.appendChild(rightSection);
 
+      //Exercício 7
+      const image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
+      leftSection.appendChild(image);
 
+      //Exercício 8
+      const ul = document.createElement('ul');
+      rightSection.appendChild(ul);
+      const arrNumbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete'
+      ,'oito', 'nove', 'dez'];
+      for (let number in arrNumbers) {
+        const li = document.createElement('li');
+        li.innerText = arrNumbers[number];
+        ul.appendChild(li);
+      };
 
-    
-    
+      //Exercício 9
+      for (let i = 0; i < 3; i += 1) {
+        const tagh3 = document.createElement('h3');
+        tagh3.innerHTML = 'show' + i;
+        tagMain.appendChild(tagh3);
+      };
     </script>
   </body>
 </html>
