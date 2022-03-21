@@ -119,9 +119,40 @@
       //Exercício 9
       for (let i = 0; i < 3; i += 1) {
         const tagh3 = document.createElement('h3');
-        tagh3.innerHTML = 'show' + i;
+        tagh3.innerHTML = 'show';
         tagMain.appendChild(tagh3);
       };
+
+      //PARTE II
+      // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+      // 1 -  Adicione a classe title na tag h1 criada;
+      // 2 - Adicione a classe description nas 3 tags h3 criadas;
+      // 3 - Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+      // 4 - Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+      // 5 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+      // 6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+
+      //Exercício 1
+      tagH1.className = 'title';
+
+      //Exercício 2
+      const elementsH3 = document.querySelectorAll('h3');
+      for (let i = 0; i < elementsH3.length; i += 1) {
+        elementsH3[i].className = 'description';
+      };
+
+      //Exercício 3
+      tagMain.removeChild(leftSection);
+      
+      //Exercício 4
+      rightSection.style.marginRight = 'auto';
+
+      //Exercício 5
+      tagMain.style.backgroundColor = 'green';
+
+      //Exercício 6
+      ul.lastChild.remove();
+      ul.lastChild.remove();
     </script>
   </body>
 </html>
