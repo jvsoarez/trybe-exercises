@@ -12,6 +12,7 @@ window.onload = () => {
   select.addEventListener('change', () => {
     const selected = select.selectedOptions[0];
     document.body.style.backgroundColor = selected.value;
+    // console.log(select.selectedOptions);
     
     localStorage.setItem('backgroundColorEscolhidos', selected.value);
   });
