@@ -4,7 +4,7 @@
 let number = 10;
 let factorialOfNumber = 1;
 
-for (let i = 10; i > 0; i -= 1) {
+for (let i = number; i > 0; i -= 1) {
     factorialOfNumber *= i;
 }
 
