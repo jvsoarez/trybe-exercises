@@ -4,7 +4,7 @@
 function returnsIndexOfBiggestValue (array) {
     let biggestIndex = 0;
     for (let index in array) {
-        if (array[index] > biggestIndex) {
+        if (array[index] > array[biggestIndex]) {
             biggestIndex = index
         };
     }
